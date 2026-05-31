@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link
+      rel="shortcut icon"
+      href="../Images/crowtus.svg"
+      type="image/x-icon"
+    />
+    <script defer src="../JS/app.js"></script>
+    <script defer src="../JS/lucide.min.js"></script>
+  </head>
+  <!-- Body -->
+  <body>
+    <!-- Navbar -->
+    <div class="nav__bg"></div>
+    <nav class="nav--bottom">
+      <button class="btn btn--tertiary btn--nav" aria-label="Menu">
+        <span data-lucide="bot-message-square"></span>
+        <span class="text--sm">Chatbot</span>
+      </button>
+      <button class="btn btn--tertiary btn--nav" aria-label="Menu">
+        <span data-lucide="bookmark"></span>
+        <span class="text--sm">Whishlist</span>
+      </button>
+      <button class="btn btn--tertiary btn--nav" aria-label="Menu">
+        <span data-lucide="home"></span>
+        <span class="text--sm">Home</span>
+      </button>
+      <button class="btn btn--tertiary btn--nav" aria-label="Menu">
+        <span data-lucide="shopping-cart"></span>
+        <span class="text--sm">Cart</span>
+      </button>
+      <button class="btn btn--tertiary btn--nav" aria-label="Menu">
+        <span data-lucide="compass"></span>
+        <span class="text--sm">Explore</span>
+      </button>
+    </nav>
+    <!-- Header -->
+    <header class="header">
+      <div class="header--mobile">
+        <button class="btn btn--tertiary btn--header" aria-label="Menu">
+          <span data-lucide="menu"></span>
+        </button>
+        <div class="logo">
+          <img src="../Images/logo/logo.svg" alt="logo" />
+        </div>
+        <button class="btn btn--tertiary btn--header" aria-label="Menu">
+          <span data-lucide="headset"></span>
+        </button>
+      </div>
+      <!-- Search Box -->
+      <div class="search" action="">
+        <div class="input input--md input__wrapper">
+          <select class="dropdown" name="" id=""></select>
+          <input
+            class="input__field"
+            type="search"
+            name="search-field"
+            id="search-field"
+            placeholder="looking for something?"
+          />
+          <span class="text--secondary" data-lucide="search"></span>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Banners -->
+      <section class="banner__container">
+        <div class="banner__wrapper">
+          <div class="banner">
+            <img src="/Images/banner.png" alt="Marco Travel 1" />
+          </div>
+          <div class="banner">
+            <img src="/Images/banner1.png" alt="Marco Travel 2" />
+          </div>
+          <div class="banner">
+            <img src="/Images/banner3.png" alt="Marco Travel 3" />
+          </div>
+        </div>
+      </section>
+      <!-- Tickets -->
+      <section class="section__title">
+        <h2>
+          <a class="btn btn--tertiary" href="">
+            <span class="text--secondary" data-lucide="ticket"></span>
+            Tickets
+          </a>
+        </h2>
+      </section>
+      <section class="main__ticket">
+        <button class="btn btn--primary btn--nav" aria-label="Menu">
+          <span data-lucide="car-front"></span>
+          <span>Car</span>
+        </button>
+        <button class="btn btn--primary btn--nav" aria-label="Menu">
+          <span data-lucide="ship"></span>
+          <span>Ship</span>
+        </button>
+        <button class="btn btn--primary btn--nav" aria-label="Menu">
+          <span data-lucide="bus-front"></span>
+          <span>Bus</span>
+        </button>
+        <button class="btn btn--primary btn--nav" aria-label="Menu">
+          <span data-lucide="Train"></span>
+          <span>Train</span>
+        </button>
+        <button class="btn btn--primary btn--nav" aria-label="Menu">
+          <span data-lucide="Plane"></span>
+          <span>Plane</span>
+        </button>
+      </section>
+      <!-- Stays Section-->
+      <section class="section__title">
+        <h2>
+          <a class="btn btn--tertiary" href="">
+            <span class="text--secondary" data-lucide="map-pin-house"></span>
+            Stays
+          </a>
+        </h2>
+      </section>
+      <div class="chips__container">
+        <button class="btn btn--secondary btn--chip" aria-pressed="true">
+          Villa
+        </button>
+        <button class="btn btn--secondary btn--chip">Apartment</button>
+        <button class="btn btn--secondary btn--chip">Cabin</button>
+        <button class="btn btn--secondary btn--chip">Beachfront</button>
+        <button class="btn btn--secondary btn--chip">Budget</button>
+        <button class="btn btn--secondary btn--chip">Luxury</button>
+        <button class="btn btn--secondary btn--chip">Private Pool</button>
+        <button class="btn btn--secondary btn--chip">City Center</button>
+        <button class="btn btn--secondary btn--chip">Family-Friendly</button>
+        <button class="btn btn--secondary btn--chip">Pet-Friendly</button>
+        <button class="btn btn--secondary btn--chip">Stylish</button>
+      </div>
+      <!-- Stays Sliders-->
+      <div class="slider__container">
+        <div class="slide">
+          <a href="" clas class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Stays/Stay No 1.svg"
+              alt="Marco Travel 1"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Stays/Stay No 2.svg"
+              alt="Marco Travel 2"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Stays/Stay No 3.svg"
+              alt="Marco Travel 3"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Stays/Stay No 4.svg"
+              alt="Marco Travel 3"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Stays/Stay No 5.svg"
+              alt="Marco Travel 3"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <br />
+      <!-- Hotels Section-->
+      <section class="section__title">
+        <h2>
+          <a class="btn btn--tertiary" href="">
+            <span class="text--secondary" data-lucide="hotel"></span>
+            Hotels
+          </a>
+        </h2>
+      </section>
+      <div class="chips__container">
+        <button class="btn btn--secondary btn--chip" aria-pressed="true">
+          5-Star
+        </button>
+        <button class="btn btn--secondary btn--chip">Boutique</button>
+        <button class="btn btn--secondary btn--chip">Business</button>
+        <button class="btn btn--secondary btn--chip">City center</button>
+        <button class="btn btn--secondary btn--chip">Spa</button>
+        <button class="btn btn--secondary btn--chip">Breakfast Included</button>
+        <button class="btn btn--secondary btn--chip">Airport Shuttle</button>
+        <button class="btn btn--secondary btn--chip">Best Value</button>
+        <button class="btn btn--secondary btn--chip">Top rated</button>
+        <button class="btn btn--secondary btn--chip">Free cancellation</button>
+      </div>
+      <!-- Hotels Sliders-->
+      <div class="slider__container">
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Hotel/Hotel No 1.svg"
+              alt="Marco Travel 1"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Hotel/Hotel No 2.svg"
+              alt="Marco Travel 2"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Hotel/Hotel No 3.svg"
+              alt="Marco Travel 3"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Hotel/Hotel No 4.svg"
+              alt="Marco Travel 3"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Hotel/Hotel No 5.svg"
+              alt="Marco Travel 3"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <br />
+
+      <!-- Tours Section-->
+      <section class="section__title">
+        <h2>
+          <a class="btn btn--tertiary" href="">
+            <span class="text--secondary" data-lucide="tent"></span>
+            Tours
+          </a>
+        </h2>
+      </section>
+      <div class="chips__container">
+        <button class="btn btn--secondary btn--chip" aria-pressed="true">
+          Guided
+        </button>
+        <button class="btn btn--secondary btn--chip">Private</button>
+        <button class="btn btn--secondary btn--chip">Nature</button>
+        <button class="btn btn--secondary btn--chip">City Tour</button>
+        <button class="btn btn--secondary btn--chip">Adventure</button>
+        <button class="btn btn--secondary btn--chip">Half-Day</button>
+        <button class="btn btn--secondary btn--chip">Food Tour</button>
+        <button class="btn btn--secondary btn--chip">Full-day</button>
+        <button class="btn btn--secondary btn--chip">Skip-the-line</button>
+        <button class="btn btn--secondary btn--chip">Pickup Included</button>
+      </div>
+      <!-- Tours Sliders-->
+      <div class="slider__container">
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Tour/Tour No 1.svg"
+              alt="Marco Travel 1"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Tour/Tour No 2.svg"
+              alt="Marco Travel 2"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Tour/Tour No 3.svg"
+              alt="Marco Travel 3"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Tour/Tour No 4.svg"
+              alt="Marco Travel 3"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Tour/Tour No 5.svg"
+              alt="Marco Travel 3"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <br />
+
+      <!-- Events Section-->
+      <section class="section__title">
+        <h2>
+          <a class="btn btn--tertiary" href="">
+            <span class="text--secondary" data-lucide="calendar-1"></span>
+            Events
+          </a>
+        </h2>
+      </section>
+      <div class="chips__container">
+        <button class="btn btn--secondary btn--chip" aria-pressed="true">
+          Tonight
+        </button>
+        <button class="btn btn--secondary btn--chip">This Weekend</button>
+        <button class="btn btn--secondary btn--chip">Concerts</button>
+        <button class="btn btn--secondary btn--chip">Festivals</button>
+        <button class="btn btn--secondary btn--chip">Exhibitions</button>
+        <button class="btn btn--secondary btn--chip">Free entry</button>
+        <button class="btn btn--secondary btn--chip">Outdoor</button>
+        <button class="btn btn--secondary btn--chip">Trending</button>
+        <button class="btn btn--secondary btn--chip">Family-friendly</button>
+        <button class="btn btn--secondary btn--chip">Nightlife</button>
+      </div>
+
+      <!-- Events Sliders-->
+      <div class="slider__container">
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Events/Event No 6.svg"
+              alt="Marco Travel 1"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Events/Event No 1.jpg"
+              alt="Marco Travel 2"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Events/Event No 2.jpg"
+              alt="Marco Travel 3"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Events/Event No 3.jpg"
+              alt="Marco Travel 3"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Events/Event No 5.jpg"
+              alt="Marco Travel 3"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Events/Event No 4.jpg"
+              alt="Marco Travel 3"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <br />
+      <section class="section__title">
+        <h2>
+          <a class="btn btn--tertiary" href="">
+            <span
+              class="text--secondary"
+              data-lucide="message-square-text"
+            ></span>
+            Comments
+          </a>
+        </h2>
+      </section>
+      <div class="comment__container">
+        <!-- Liam Bennett -->
+        <div class="comment__slide">
+          <div class="comment__header">
+            <div class="comment__rating">
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+            </div>
+            <div class="comment__date">2026/06/31</div>
+          </div>
+          <div class="comment__body">
+            " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+            dignissimos ad doloribus modi delectus optio magni consequuntur ex
+            quia est libero ipsa porro nemo quam sed, numquam dolores reiciendis
+            tenetur. "
+          </div>
+          <div class="persona">
+            <img
+              class="persona__img"
+              src="/Images/Persona/persona 1.png"
+              alt=""
+            />
+            <div class="persona__name">
+              <h3 class="text--primary">Liam Bennett</h3>
+              been using marco for over a year.
+            </div>
+          </div>
+        </div>
+        <!-- Mia Anderson -->
+        <div class="comment__slide">
+          <div class="comment__header">
+            <div class="comment__rating">
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+              <span data-lucide="star"></span>
+            </div>
+            <div class="comment__date">2026/06/25</div>
+          </div>
+          <div class="comment__body">
+            " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+            dignissimos ad doloribus modi delectus optio magni consequuntur ex
+            quia est libero ipsa porro nemo quam sed, numquam dolores reiciendis
+            tenetur. "
+          </div>
+          <div class="persona">
+            <img
+              class="persona__img"
+              src="/Images/Persona/persona 4.png"
+              alt=""
+            />
+            <div class="persona__name">
+              <h3 class="text--primary">Mia Anderson</h3>
+              been using marco for over a year.
+            </div>
+          </div>
+        </div>
+        <!-- Noah Wilson -->
+        <div class="comment__slide">
+          <div class="comment__header">
+            <div class="comment__rating">
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+            </div>
+            <div class="comment__date">2026/06/28</div>
+          </div>
+          <div class="comment__body">
+            " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+            dignissimos ad doloribus modi delectus optio magni consequuntur ex
+            quia est libero ipsa porro nemo quam sed, numquam dolores reiciendis
+            tenetur. "
+          </div>
+          <div class="persona">
+            <img
+              class="persona__img"
+              src="/Images/Persona/persona 5.png"
+              alt=""
+            />
+            <div class="persona__name">
+              <h3 class="text--primary">Noah Wilson</h3>
+              been using marco for over a year.
+            </div>
+          </div>
+        </div>
+        <!-- Sofia Martinez -->
+        <div class="comment__slide">
+          <div class="comment__header">
+            <div class="comment__rating">
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+            </div>
+            <div class="comment__date">2026/06/28</div>
+          </div>
+          <div class="comment__body">
+            " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+            dignissimos ad doloribus modi delectus optio magni consequuntur ex
+            quia est libero ipsa porro nemo quam sed, numquam dolores reiciendis
+            tenetur. "
+          </div>
+          <div class="persona">
+            <img
+              class="persona__img"
+              src="/Images/Persona/persona 2.png"
+              alt=""
+            />
+            <div class="persona__name">
+              <h3 class="text--primary">Sofia Martinez</h3>
+              been using marco for over a year.
+            </div>
+          </div>
+        </div>
+        <!-- Ethan Walker -->
+        <div class="comment__slide">
+          <div class="comment__header">
+            <div class="comment__rating">
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+              <span class="svg--fill" data-lucide="star"></span>
+            </div>
+            <div class="comment__date">2026/06/28</div>
+          </div>
+          <div class="comment__body">
+            " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+            dignissimos ad doloribus modi delectus optio magni consequuntur ex
+            quia est libero ipsa porro nemo quam sed, numquam dolores reiciendis
+            tenetur. "
+          </div>
+          <div class="persona">
+            <img
+              class="persona__img"
+              src="/Images/Persona/persona 3.png"
+              alt=""
+            />
+            <div class="persona__name">
+              <h3 class="text--primary">Ethan Walker</h3>
+              been using marco for over a year.
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+    </main>
+    <footer class="footer__container">
+      <img class="footer__img" src="../Images/logo/logo.svg" alt="logo" />
+      <div class="footer__columns">
+        <a class="btn btn--chip" href="">FAQ</a>
+        <a class="btn btn--chip" href="">Terms & Conditions</a>
+        <a class="btn btn--chip" href="">Privacy Policy</a>
+        <a class="btn btn--chip" href="">Shipping & Returns</a>
+        <a class="btn btn--chip" href="">About MARCO</a>
+
+        <a class="btn btn--chip" href="">Contact Us</a>
+        <a class="btn btn--chip" href="">Blog</a>
+        <a class="btn btn--chip" href="">Join the Community</a>
+        <a class="btn btn--chip" href="">Gift Cards</a>
+        <a class="btn btn--chip" href="">Track Order</a>
+      </div>
+      <p>
+        All content on this website is the property of MARCO and is protected by
+        copyright law. © 2026 MARCO. All rights reserved.
+      </p>
+    </footer>
+    <script>
+      const chips = document.querySelectorAll(".btn--chip");
+
+      chips.forEach((chip) => {
+        chip.addEventListener("click", () => {
+          chips.forEach((c) => c.setAttribute("aria-pressed", "false"));
+          chip.setAttribute("aria-pressed", "true");
+        });
+      });
+    </script>
+  </body>
+</html>
