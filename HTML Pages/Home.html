@@ -17,78 +17,141 @@
     <script defer src="../JS/app.js"></script>
     <script defer src="../JS/lucide.min.js"></script>
   </head>
-  <!-- Body -->
   <body>
     <!-- Navbar -->
-    <div class="nav__bg"></div>
-    <nav class="nav--bottom">
-      <button class="btn btn--tertiary btn--nav" aria-label="Menu">
-        <span data-lucide="bot-message-square"></span>
-        <span class="text--sm">Chatbot</span>
-      </button>
-      <button class="btn btn--tertiary btn--nav" aria-label="Menu">
-        <span data-lucide="bookmark"></span>
-        <span class="text--sm">Whishlist</span>
-      </button>
-      <button class="btn btn--tertiary btn--nav" aria-label="Menu">
-        <span data-lucide="home"></span>
-        <span class="text--sm">Home</span>
-      </button>
-      <button class="btn btn--tertiary btn--nav" aria-label="Menu">
-        <span data-lucide="shopping-cart"></span>
-        <span class="text--sm">Cart</span>
-      </button>
-      <button class="btn btn--tertiary btn--nav" aria-label="Menu">
-        <span data-lucide="compass"></span>
-        <span class="text--sm">Explore</span>
-      </button>
+    <nav class="nav">
+      <ul class="nav__items container">
+        <li>
+          <a class="btn btn--tertiary btn--nav" href="./chatbot.html">
+            <span data-lucide="bot-message-square" aria-hidden="true"></span>
+            <span class="text--sm">Chatbot</span>
+          </a>
+        </li>
+        <li>
+          <a class="btn btn--tertiary btn--nav" href="./wishlist.html">
+            <span data-lucide="bookmark" aria-hidden="true"></span>
+            <span class="text--sm">Wishlist</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="btn btn--tertiary btn--nav btn--is-active"
+            href="./home.html"
+            aria-current="page"
+          >
+            <span data-lucide="home" aria-hidden="true"></span>
+            <span class="text--sm">Home</span>
+          </a>
+        </li>
+        <li>
+          <a class="btn btn--tertiary btn--nav" href="./cart.html">
+            <span data-lucide="shopping-cart" aria-hidden="true"></span>
+            <span class="text--sm">Cart</span>
+          </a>
+        </li>
+        <li>
+          <a class="btn btn--tertiary btn--nav" href="./explore.html">
+            <span data-lucide="compass" aria-hidden="true"></span>
+            <span class="text--sm">Explore</span>
+          </a>
+        </li>
+      </ul>
     </nav>
     <!-- Header -->
-    <header class="header">
-      <div class="header--mobile">
+    <header class="header section">
+      <section class="header__title container">
         <button class="btn btn--tertiary btn--header" aria-label="Menu">
           <span data-lucide="menu"></span>
         </button>
         <div class="logo">
-          <img src="../Images/logo/logo.svg" alt="logo" />
+          <img src="../Images/logo/logo.svg" alt="" />
         </div>
-        <button class="btn btn--tertiary btn--header" aria-label="Menu">
+        <button
+          class="btn btn--tertiary btn--header"
+          aria-label="Customer Service"
+        >
           <span data-lucide="headset"></span>
         </button>
-      </div>
+      </section>
       <!-- Search Box -->
-      <div class="search" action="">
-        <div class="input input--md input__wrapper">
-          <select class="dropdown" name="" id=""></select>
-          <input
-            class="input__field"
-            type="search"
-            name="search-field"
-            id="search-field"
-            placeholder="looking for something?"
-          />
-          <span class="text--secondary" data-lucide="search"></span>
-        </div>
-      </div>
+      <form
+        class="search container"
+        action="/search"
+        method="get"
+        role="search"
+      >
+        <select class="dropdown" name="category" id="category">
+          <option value="all" selected>All</option>
+          <option value="">Tickets</option>
+          <option value="">Stays</option>
+          <option value="">Hotels</option>
+          <option value="">Tours</option>
+          <option value="">Events</option>
+          <option value="">Dining</option>
+          <option value="">Posts</option>
+        </select>
+        <input
+          class="input input__field"
+          type="search"
+          name="search-field"
+          id="search-field"
+          placeholder="looking for something?"
+          autocomplete="off"
+        />
+        <button class="btn btn--tertiary btn--header">
+          <span
+            class="text--secondary"
+            data-lucide="search"
+            aria-hidden="true"
+          ></span>
+        </button>
+      </form>
     </header>
     <!-- Main -->
     <main>
       <!-- Banners -->
-      <section class="banner__container">
-        <div class="banner__wrapper">
-          <div class="banner">
-            <img src="/Images/banner.png" alt="Marco Travel 1" />
-          </div>
-          <div class="banner">
-            <img src="/Images/banner1.png" alt="Marco Travel 2" />
-          </div>
-          <div class="banner">
-            <img src="/Images/banner3.png" alt="Marco Travel 3" />
-          </div>
+      <section class="hero section">
+        <div class="container">
+          <ul class="hero__list">
+            <li class="hero__content">
+              <img
+                class="hero__bg"
+                src="/Images/banner1.png"
+                alt="Marco Banner 1"
+              />
+              <article class="hero__article">
+                <h2>Explore <span class="text--secondary">the World</span></h2>
+                <h2>with <span class="text--primary">Marco</span></h2>
+                <p>Your AI-powered global travel companion.</p>
+                <br />
+                <a class="btn btn--primary" href="/HTML Pages/Explore.html">
+                  Start Here
+                  <span data-lucide="chevron-right"></span>
+                </a>
+              </article>
+            </li>
+            <li class="hero__content">
+              <img
+                class="hero__bg"
+                src="/Images/banner2.png"
+                alt="Marco Banner 2"
+              />
+              <article class="hero__article">
+                <h2>Perfect<span class="text--secondary"> Trip</span></h2>
+                <h2>Planned in<span class="text--primary"> Seconds</span></h2>
+                <p>Plan your desired trip style with Marco planner.</p>
+                <br />
+                <a class="btn btn--primary" href="/HTML Pages/Explore.html">
+                  Start Here
+                  <span data-lucide="chevron-right"></span>
+                </a>
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
       <!-- Tickets -->
-      <section class="section__title">
+      <section class="section__title container">
         <h2>
           <a class="btn btn--tertiary" href="">
             <span class="text--secondary" data-lucide="ticket"></span>
@@ -96,7 +159,7 @@
           </a>
         </h2>
       </section>
-      <section class="main__ticket">
+      <section class="main__ticket container">
         <button class="btn btn--primary btn--nav" aria-label="Menu">
           <span data-lucide="car-front"></span>
           <span>Car</span>
@@ -118,8 +181,9 @@
           <span>Plane</span>
         </button>
       </section>
+      <br />
       <!-- Stays Section-->
-      <section class="section__title">
+      <section class="section__title container">
         <h2>
           <a class="btn btn--tertiary" href="">
             <span class="text--secondary" data-lucide="map-pin-house"></span>
@@ -127,7 +191,7 @@
           </a>
         </h2>
       </section>
-      <div class="chips__container">
+      <div class="chips__container container">
         <button class="btn btn--secondary btn--chip" aria-pressed="true">
           Villa
         </button>
@@ -143,7 +207,7 @@
         <button class="btn btn--secondary btn--chip">Stylish</button>
       </div>
       <!-- Stays Sliders-->
-      <div class="slider__container">
+      <div class="slider__container container">
         <div class="slide">
           <a href="" clas class="slide__link">
             <img
@@ -212,7 +276,7 @@
       </div>
       <br />
       <!-- Hotels Section-->
-      <section class="section__title">
+      <section class="section__title container">
         <h2>
           <a class="btn btn--tertiary" href="">
             <span class="text--secondary" data-lucide="hotel"></span>
@@ -220,7 +284,7 @@
           </a>
         </h2>
       </section>
-      <div class="chips__container">
+      <div class="chips__container container">
         <button class="btn btn--secondary btn--chip" aria-pressed="true">
           5-Star
         </button>
@@ -235,7 +299,7 @@
         <button class="btn btn--secondary btn--chip">Free cancellation</button>
       </div>
       <!-- Hotels Sliders-->
-      <div class="slider__container">
+      <div class="slider__container container">
         <div class="slide">
           <a href="" class="slide__link">
             <img
@@ -305,7 +369,7 @@
       <br />
 
       <!-- Tours Section-->
-      <section class="section__title">
+      <section class="section__title container">
         <h2>
           <a class="btn btn--tertiary" href="">
             <span class="text--secondary" data-lucide="tent"></span>
@@ -313,7 +377,7 @@
           </a>
         </h2>
       </section>
-      <div class="chips__container">
+      <div class="chips__container container">
         <button class="btn btn--secondary btn--chip" aria-pressed="true">
           Guided
         </button>
@@ -328,7 +392,7 @@
         <button class="btn btn--secondary btn--chip">Pickup Included</button>
       </div>
       <!-- Tours Sliders-->
-      <div class="slider__container">
+      <div class="slider__container container">
         <div class="slide">
           <a href="" class="slide__link">
             <img
@@ -398,7 +462,7 @@
       <br />
 
       <!-- Events Section-->
-      <section class="section__title">
+      <section class="section__title container">
         <h2>
           <a class="btn btn--tertiary" href="">
             <span class="text--secondary" data-lucide="calendar-1"></span>
@@ -406,7 +470,7 @@
           </a>
         </h2>
       </section>
-      <div class="chips__container">
+      <div class="chips__container container">
         <button class="btn btn--secondary btn--chip" aria-pressed="true">
           Tonight
         </button>
@@ -422,7 +486,7 @@
       </div>
 
       <!-- Events Sliders-->
-      <div class="slider__container">
+      <div class="slider__container container">
         <div class="slide">
           <a href="" class="slide__link">
             <img
@@ -503,7 +567,119 @@
         </div>
       </div>
       <br />
-      <section class="section__title">
+
+      <!-- Dining Section-->
+      <section class="section__title container">
+        <h2>
+          <a class="btn btn--tertiary" href="">
+            <span class="text--secondary" data-lucide="utensils-crossed"></span>
+            Dining
+          </a>
+        </h2>
+      </section>
+      <div class="chips__container container">
+        <button class="btn btn--secondary btn--chip" aria-pressed="true">
+          Tonight
+        </button>
+        <button class="btn btn--secondary btn--chip">Street Food</button>
+        <button class="btn btn--secondary btn--chip">Near Me</button>
+        <button class="btn btn--secondary btn--chip">Dinner</button>
+        <button class="btn btn--secondary btn--chip">Lunch</button>
+        <button class="btn btn--secondary btn--chip">Breakfast</button>
+        <button class="btn btn--secondary btn--chip">Brunch</button>
+        <button class="btn btn--secondary btn--chip">Trending</button>
+        <button class="btn btn--secondary btn--chip">Vegetarian</button>
+        <button class="btn btn--secondary btn--chip">Coffee & Dessert</button>
+        <button class="btn btn--secondary btn--chip">Budget</button>
+        <button class="btn btn--secondary btn--chip">Elegant</button>
+        <button class="btn btn--secondary btn--chip">Romantic</button>
+      </div>
+
+      <!-- Dining Sliders-->
+      <div class="slider__container container">
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Dining/Dining No 6.jpg"
+              alt="Marco Travel 1"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Dining/Dining No 1.jpg"
+              alt="Marco Travel 2"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Dining/Dining No 4.jpg"
+              alt="Marco Travel 3"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Dining/Dining No 2.jpg"
+              alt="Marco Travel 3"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Dining/Dining No 3.jpg"
+              alt="Marco Travel 3"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="" class="slide__link">
+            <img
+              class="slide__img"
+              src="/Images/Dining/Dining No 5.jpg"
+              alt="Marco Travel 3"
+            />
+            <div class="slide__overlay">
+              <h4 class="slide__title">Seaside Villa</h4>
+              <p class="slide__text">4 guests • 2 beds • Free cancellation</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- end of experiences -->
+      <br />
+      <section class="section__title container">
         <h2>
           <a class="btn btn--tertiary" href="">
             <span
@@ -514,7 +690,7 @@
           </a>
         </h2>
       </section>
-      <div class="comment__container">
+      <div class="comment__container container">
         <!-- Liam Bennett -->
         <div class="comment__slide">
           <div class="comment__header">

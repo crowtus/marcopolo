@@ -13,6 +13,14 @@
   align-items: center;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.section {
+  width: 100%;
+}
 .col {
   display: flex;
   flex-direction: row;
