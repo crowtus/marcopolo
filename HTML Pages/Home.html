@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="nav">
+    <nav class="nav section">
       <ul class="nav__items container">
         <li>
           <a class="btn btn--tertiary btn--nav" href="./chatbot.html">
@@ -74,8 +74,8 @@
         </button>
       </section>
       <!-- Search Box -->
-      <form
-        class="search container"
+      <div
+        class="input-group container"
         action="/search"
         method="get"
         role="search"
@@ -91,7 +91,7 @@
           <option value="">Posts</option>
         </select>
         <input
-          class="input input__field"
+          class="input__field"
           type="search"
           name="search-field"
           id="search-field"
@@ -105,7 +105,7 @@
             aria-hidden="true"
           ></span>
         </button>
-      </form>
+      </div>
     </header>
     <!-- Main -->
     <main>

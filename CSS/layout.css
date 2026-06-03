@@ -46,8 +46,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: var(--text-lg);
 }
 
+@media only screen and (min-width: 768px) {
+  .login__form {
+    font-size: var(--text-xl);
+  }
+}
 @media only screen and (min-width: 1024px) {
   .login__img {
     display: none;
