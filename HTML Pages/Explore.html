@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <link rel="stylesheet" href="../CSS/variables.css" />
+    <link rel="stylesheet" href="../CSS/base.css" />
+    <link rel="stylesheet" href="../CSS/layout.css" />
+    <link rel="stylesheet" href="../CSS/components.css" />
+    <link
+      rel="shortcut icon"
+      href="../Images/crowtus.svg"
+      type="image/x-icon"
+    />
+    <script defer src="../JS/app.js"></script>
+    <script defer src="../JS/lucide.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="nav section">
+      <ul class="nav__items container">
+        <li>
+          <a class="btn btn--tertiary btn--nav" href="./Chatbot.html">
+            <span data-lucide="bot-message-square" aria-hidden="true"></span>
+            <span class="text--sm">Chatbot</span>
+          </a>
+        </li>
+        <li>
+          <a class="btn btn--tertiary btn--nav" href="./Wishlist.html">
+            <span data-lucide="bookmark" aria-hidden="true"></span>
+            <span class="text--sm">Wishlist</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="btn btn--tertiary btn--nav"
+            href="./Home.html"
+            aria-current="page"
+          >
+            <span data-lucide="home" aria-hidden="true"></span>
+            <span class="text--sm">Home</span>
+          </a>
+        </li>
+        <li>
+          <a class="btn btn--tertiary btn--nav" href="./Cart.html">
+            <span data-lucide="shopping-cart" aria-hidden="true"></span>
+            <span class="text--sm">Cart</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="btn btn--tertiary btn--nav btn--is-active"
+            href="./Explore.html"
+          >
+            <span data-lucide="compass" aria-hidden="true"></span>
+            <span class="text--sm">Explore</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Header -->
+    <header class="header section">
+      <section class="header__title container">
+        <button class="btn btn--tertiary btn--header" aria-label="Menu">
+          <span data-lucide="menu"></span>
+        </button>
+        <div class="logo">
+          <img src="../Images/logo/logo.svg" alt="" />
+        </div>
+        <button
+          class="btn btn--tertiary btn--header"
+          aria-label="Customer Service"
+        >
+          <span data-lucide="headset"></span>
+        </button>
+      </section>
+      <!-- Search Box -->
+      <div
+        class="input-group container"
+        action="/search"
+        method="get"
+        role="search"
+      >
+        <select class="dropdown" name="category" id="category">
+          <option value="all" selected>All</option>
+          <option value="">Tickets</option>
+          <option value="">Stays</option>
+          <option value="">Hotels</option>
+          <option value="">Tours</option>
+          <option value="">Events</option>
+          <option value="">Dining</option>
+          <option value="">Posts</option>
+        </select>
+        <input
+          class="input__field"
+          type="search"
+          name="search-field"
+          id="search-field"
+          placeholder="looking for something?"
+          autocomplete="off"
+        />
+        <button class="btn btn--tertiary btn--header">
+          <span
+            class="text--secondary"
+            data-lucide="search"
+            aria-hidden="true"
+          ></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <!-- explore -->
+      <section class="explore section">
+        <ul class="explore__list container">
+          <li class="card">
+            <div class="card__header">
+              <h2 class="text--primary">Vienna Memories</h2>
+            </div>
+            <div class="card__content">
+              <a href="">
+                <img
+                  class="card__img"
+                  src="/Images/Expore/Post 1.webp"
+                  alt="post image"
+                />
+              </a>
+            </div>
+            <div class="card__footer">
+              <div class="persona">
+                <img
+                  class="persona__img"
+                  src="/Images/Persona/persona_07.webp"
+                  alt=""
+                />
+                <div class="persona__details">
+                  <div class="persona__name">
+                    <h3 class="text--primary">Chloe Dupont</h3>
+                  </div>
+                  <div class="persona__location">
+                    <span class="text--secondary" data-lucide="map-pin"></span>
+                    Paris, France
+                  </div>
+                </div>
+              </div>
+              <div class="card__details">
+                <div class="card__rating">
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                </div>
+                <div class="card__date">2026/06/31</div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__header">
+              <h2 class="text--primary">Hiking the Alps</h2>
+            </div>
+            <div class="card__content">
+              <a href="">
+                <img
+                  class="card__img"
+                  src="/Images/Expore/Post 2.webp"
+                  alt="post image"
+                />
+              </a>
+            </div>
+            <div class="card__footer">
+              <div class="persona">
+                <img
+                  class="persona__img"
+                  src="/Images/Persona/persona_08.webp"
+                  alt=""
+                />
+                <div class="persona__details">
+                  <div class="persona__name">
+                    <h3 class="text--primary">Noah Jensen</h3>
+                  </div>
+                  <div class="persona__location">
+                    <span class="text--secondary" data-lucide="map-pin"></span>
+                    Copenhagen, Denmark
+                  </div>
+                </div>
+              </div>
+              <div class="card__details">
+                <div class="card__rating">
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                </div>
+                <div class="card__date">2026-03-01</div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__header">
+              <h2 class="text--primary">Concrete Jungle</h2>
+            </div>
+            <div class="card__content">
+              <a href="">
+                <img
+                  class="card__img"
+                  src="/Images/Expore/Post 3.webp"
+                  alt="post image"
+                />
+              </a>
+            </div>
+            <div class="card__footer">
+              <div class="persona">
+                <img
+                  class="persona__img"
+                  src="/Images/Persona/persona_09 (2).webp"
+                  alt=""
+                />
+                <div class="persona__details">
+                  <div class="persona__name">
+                    <h3 class="text--primary">Julie Morgan</h3>
+                  </div>
+                  <div class="persona__location">
+                    <span class="text--secondary" data-lucide="map-pin"></span>
+                    Miami, USA
+                  </div>
+                </div>
+              </div>
+              <div class="card__details">
+                <div class="card__rating">
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                </div>
+                <div class="card__date">2026-03-08</div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__header">
+              <h2 class="text--primary">Vienna Memories</h2>
+            </div>
+            <div class="card__content">
+              <a href="">
+                <img
+                  class="card__img"
+                  src="/Images/Expore/Post 4.webp"
+                  alt="post image"
+                />
+              </a>
+            </div>
+            <div class="card__footer">
+              <div class="persona">
+                <img
+                  class="persona__img"
+                  src="/Images/Persona/persona 1.webp"
+                  alt=""
+                />
+                <div class="persona__details">
+                  <div class="persona__name">
+                    <h3 class="text--primary">Liam Bennett</h3>
+                  </div>
+                  <div class="persona__location">
+                    <span class="text--secondary" data-lucide="map-pin"></span>
+                    Miami, USA
+                  </div>
+                </div>
+              </div>
+              <div class="card__details">
+                <div class="card__rating">
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                </div>
+                <div class="card__date">2026/06/31</div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__header">
+              <h2 class="text--primary">Vienna Memories</h2>
+            </div>
+            <div class="card__content">
+              <a href="">
+                <img
+                  class="card__img"
+                  src="/Images/Expore/Post 5.webp"
+                  alt="post image"
+                />
+              </a>
+            </div>
+            <div class="card__footer">
+              <div class="persona">
+                <img
+                  class="persona__img"
+                  src="/Images/Persona/persona 1.webp"
+                  alt=""
+                />
+                <div class="persona__details">
+                  <div class="persona__name">
+                    <h3 class="text--primary">Liam Bennett</h3>
+                  </div>
+                  <div class="persona__location">
+                    <span class="text--secondary" data-lucide="map-pin"></span>
+                    Miami, USA
+                  </div>
+                </div>
+              </div>
+              <div class="card__details">
+                <div class="card__rating">
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                </div>
+                <div class="card__date">2026/06/31</div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__header">
+              <h2 class="text--primary">Vienna Memories</h2>
+            </div>
+            <div class="card__content">
+              <a href="">
+                <img
+                  class="card__img"
+                  src="/Images/Expore/Post 6.webp"
+                  alt="post image"
+                />
+              </a>
+            </div>
+            <div class="card__footer">
+              <div class="persona">
+                <img
+                  class="persona__img"
+                  src="/Images/Persona/persona 1.webp"
+                  alt=""
+                />
+                <div class="persona__details">
+                  <div class="persona__name">
+                    <h3 class="text--primary">Liam Bennett</h3>
+                  </div>
+                  <div class="persona__location">
+                    <span class="text--secondary" data-lucide="map-pin"></span>
+                    Miami, USA
+                  </div>
+                </div>
+              </div>
+              <div class="card__details">
+                <div class="card__rating">
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                </div>
+                <div class="card__date">2026/06/31</div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__header">
+              <h2 class="text--primary">Vienna Memories</h2>
+            </div>
+            <div class="card__content">
+              <a href="">
+                <img
+                  class="card__img"
+                  src="/Images/Expore/Post 7.webp"
+                  alt="post image"
+                />
+              </a>
+            </div>
+            <div class="card__footer">
+              <div class="persona">
+                <img
+                  class="persona__img"
+                  src="/Images/Persona/persona 1.webp"
+                  alt=""
+                />
+                <div class="persona__details">
+                  <div class="persona__name">
+                    <h3 class="text--primary">Liam Bennett</h3>
+                  </div>
+                  <div class="persona__location">
+                    <span class="text--secondary" data-lucide="map-pin"></span>
+                    Miami, USA
+                  </div>
+                </div>
+              </div>
+              <div class="card__details">
+                <div class="card__rating">
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                </div>
+                <div class="card__date">2026/06/31</div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__header">
+              <h2 class="text--primary">Vienna Memories</h2>
+            </div>
+            <div class="card__content">
+              <a href="">
+                <img
+                  class="card__img"
+                  src="/Images/Expore/Post 8.webp"
+                  alt="post image"
+                />
+              </a>
+            </div>
+            <div class="card__footer">
+              <div class="persona">
+                <img
+                  class="persona__img"
+                  src="/Images/Persona/persona 1.webp"
+                  alt=""
+                />
+                <div class="persona__details">
+                  <div class="persona__name">
+                    <h3 class="text--primary">Liam Bennett</h3>
+                  </div>
+                  <div class="persona__location">
+                    <span class="text--secondary" data-lucide="map-pin"></span>
+                    Miami, USA
+                  </div>
+                </div>
+              </div>
+              <div class="card__details">
+                <div class="card__rating">
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                </div>
+                <div class="card__date">2026/06/31</div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__header">
+              <h2 class="text--primary">Vienna Memories</h2>
+            </div>
+            <div class="card__content">
+              <a href="">
+                <img
+                  class="card__img"
+                  src="/Images/Expore/Post 9.webp"
+                  alt="post image"
+                />
+              </a>
+            </div>
+            <div class="card__footer">
+              <div class="persona">
+                <img
+                  class="persona__img"
+                  src="/Images/Persona/persona 1.webp"
+                  alt=""
+                />
+                <div class="persona__details">
+                  <div class="persona__name">
+                    <h3 class="text--primary">Liam Bennett</h3>
+                  </div>
+                  <div class="persona__location">
+                    <span class="text--secondary" data-lucide="map-pin"></span>
+                    Miami, USA
+                  </div>
+                </div>
+              </div>
+              <div class="card__details">
+                <div class="card__rating">
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                  <span class="svg--fill" data-lucide="star"></span>
+                </div>
+                <div class="card__date">2026/06/31</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
