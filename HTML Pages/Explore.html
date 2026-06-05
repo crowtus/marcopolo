@@ -83,22 +83,12 @@
         method="get"
         role="search"
       >
-        <select class="dropdown" name="category" id="category">
-          <option value="all" selected>All</option>
-          <option value="">Tickets</option>
-          <option value="">Stays</option>
-          <option value="">Hotels</option>
-          <option value="">Tours</option>
-          <option value="">Events</option>
-          <option value="">Dining</option>
-          <option value="">Posts</option>
-        </select>
         <input
           class="input__field"
           type="search"
           name="search-field"
           id="search-field"
-          placeholder="looking for something?"
+          placeholder="Search for Journeys ..."
           autocomplete="off"
         />
         <button class="btn btn--tertiary btn--header">
@@ -112,7 +102,24 @@
     </header>
     <main>
       <!-- explore -->
-      <section class="explore section">
+      <section class="explore container">
+        <div class="chips__container container">
+          <button class="btn btn--secondary btn--chip" aria-pressed="true">
+            Adventurous
+          </button>
+          <button class="btn btn--secondary btn--chip">Urban</button>
+          <button class="btn btn--secondary btn--chip">Mountain</button>
+          <button class="btn btn--secondary btn--chip">Coastal</button>
+          <button class="btn btn--secondary btn--chip">Desert</button>
+          <button class="btn btn--secondary btn--chip">Forest</button>
+          <button class="btn btn--secondary btn--chip">Backpacking</button>
+          <button class="btn btn--secondary btn--chip">Luxury</button>
+          <button class="btn btn--secondary btn--chip">Road Trip</button>
+          <button class="btn btn--secondary btn--chip">Hiking</button>
+          <button class="btn btn--secondary btn--chip">Cultural</button>
+          <button class="btn btn--secondary btn--chip">Relaxing</button>
+          <button class="btn btn--secondary btn--chip">Hidden Gem</button>
+        </div>
         <ul class="explore__list container">
           <li class="card">
             <div class="card__header">
