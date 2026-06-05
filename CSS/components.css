@@ -1006,7 +1006,7 @@ input[type="radio"]:focus-visible {
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  background-image: url(/Images/background.png);
+  background-image: url(/Images/background.webp);
   border: solid 2px var(--color-white);
   padding: 1em 1em 140px 1em;
 }
